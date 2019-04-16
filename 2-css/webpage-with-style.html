@@ -15,6 +15,13 @@
         .underlined {
             text-decoration: underline;
         }
+        .first-section {
+            background: pink;
+            width: 100px;
+        }
+        .second-section{
+            background: yellow;
+        }
         
 /*        内部CSS*/
 /*
@@ -29,11 +36,16 @@
     </style>
 </head>
 <body>
+    <div class="first-section">
 <!--    <h1 style="color:green">新プロダクトのご紹介</h1>-->
-    <h1 class = "blue">新プロダクトのご紹介</h1>
+        <h1 class = "blue">新プロダクトのご紹介</h1>
 <!--    <p style="color:blue;font-size:100%">今回は、新しくリリースするプロダクトの紹介をします。</p>-->
-    <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
-    <p class="large">バーチャルリアリティが体験できるVRゴーグルを発売します。</p>
-    <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</p>
+        <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
+    </div>
+    
+    <div class="second-section">
+        <p class="large">バーチャルリアリティが体験できるVRゴーグルを発売します。</p>
+        <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</p>
+    </div>
 </body>
 </html>
