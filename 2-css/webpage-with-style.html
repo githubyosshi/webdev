@@ -19,16 +19,30 @@
             background: lightgreen;
             /* background: pink; */
             width: 30%;
-            float:right;
+            /* float:right; */
+            /* position: relative;     現在の位置を基準に相対的な位置決め */
+            /* left: 20px; */
+            /* top: 100px; */
+            /* z-index: 2; */
+            /* opacity: 0.8;       透明度 */
+            height: 1000px;
+            position: absolute;   /*絶対位置 親要素又はウィンドウ左上基準*/
+            left: 300px;
+            top: 200px;
         }
         .second-section{
             background: yellow;
             width: 30%;
-            float: left;
+            /* float: left; */
+            /* position: relative; */
+            /* left: 200px; */
+            /* top: 20px; */
+            /* z-index: 1; */
+            position: fixed;    /* 絶対位置でスクロールしても位置は固定 */
         }
-        .clear-float {
+        /* .clear-float {
             clear:both;
-        }
+        } */
         
 /*         内部CSS */ 
 /*
