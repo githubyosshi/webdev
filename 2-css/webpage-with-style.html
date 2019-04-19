@@ -3,6 +3,35 @@
 <head>
     <title>WebPage withvstyle</title>
     <style type="text/css">
+        #square-red {
+            /* width: 100px;
+            height: 100px; */
+            background-color: red;
+            border-radius: 20px;
+        }
+        #square-blue {
+            /* width: 100px; */
+            /* height: 100px; */
+            background-color: lightblue;
+            /* border: 5px black; */
+            border: black;
+            border-style: solid double dotted dashed;
+            border-width: 10px 5px 4px 6px;
+        }
+        #square-green {
+            /* width: 100px; */
+            /* height: 100px; */
+            background-color: green;
+            border-radius: 50%;         /* 円型 */
+        }
+        .square {                   /* 共通設定 */
+            width: 100px;
+            height: 100px;
+            margin: 40px;
+            float: left;
+        }
+
+
         .blue {
             color: #4285F4;
         }
@@ -36,7 +65,7 @@
             margin-left: 20px; */
             margin: 50px 100px 100px;
             /* padding: 30px; */
-            padding-top: 50px;
+            padding-top: 200px;
             padding-right: 100px;
             padding-bottom: 100px;
             padding-left: 200px;
@@ -75,6 +104,11 @@
     </style>
 </head>
 <body>
+    <div id="square-red" class="square"></div>
+    <div id="square-blue" class="square"></div>
+    <div id="square-green" class="square"></div>
+
+
     <div class="first-section">
 <!--    <h1 style="color:green">新プロダクトのご紹介</h1>-->
         <h1 class = "blue">新プロダクトのご紹介</h1>
