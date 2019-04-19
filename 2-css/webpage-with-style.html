@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebPage withvstyle</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+    <style type="text/css">
+        p {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        #square-red {
+            /* width: 100px;
+            height: 100px; */
+            background-color: red;
+            border-radius: 20px;
+        }
+        #square-blue {
+            /* width: 100px; */
+            /* height: 100px; */
+            background-color: lightblue;
+            /* border: 5px black; */
+            border: black;
+            border-style: solid double dotted dashed;
+            border-width: 10px 5px 4px 6px;
+        }
+        #square-green {
+            /* width: 100px; */
+            /* height: 100px; */
+            background-color: green;
+            border-radius: 50%;         /* 円型 */
+        }
+        .square {                   /* 共通設定 */
+            width: 100px;
+            height: 100px;
+            margin: 40px;
+            float: left;
+        }
+
+
+        .blue {
+            color: #4285F4;
+        }
+        .large {
+            font-size: 100%;
+        }
+        #green {
+            color: green;
+        }
+        .underlined {
+            text-decoration: underline;
+        }
+        .first-section {
+            background: lightgreen;
+            /* background: pink; */
+            width: 30%;
+            /* float:right; */
+            /* position: relative;     現在の位置を基準に相対的な位置決め */
+            /* left: 20px; */
+            /* top: 100px; */
+            /* z-index: 2; */
+            /* opacity: 0.8;       透明度 */
+            /* height: 1000px;
+            position: absolute;   /*絶対位置 親要素又はウィンドウ左上基準*/
+            /* left: 300px;
+            top: 200px; */
+            /* margin: 100px;      上下左右 */
+            /* margin-top: 100px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+            margin-left: 20px; */
+            margin: 50px 100px 100px;
+            /* padding: 30px; */
+            padding-top: 200px;
+            padding-right: 100px;
+            padding-bottom: 100px;
+            padding-left: 200px;
+        }
+        .second-section{
+            background: yellow;
+            width: 30%;
+            /* float: left; */
+            /* position: relative; */
+            /* left: 200px; */
+            /* top: 20px; */
+            /* z-index: 1; */
+            position: fixed;    /* 絶対位置でスクロールしても位置は固定 */
+        }
+        body {
+            background-color: darkorange;
+            margin: 0;       /* ブラウザのデフォルト値をクリア */
+            padding: 0;      /* ブラウザのデフォルト値をクリア */
+
+        }
+
+        /* .clear-float {
+            clear:both;
+        } */
+        
+/*         内部CSS */ 
+/*
+        p {
+            color:black;
+            font-size:100%;
+        }
+        h1 {
+            color:purple;
+        }
+*/
+    </style>
+</head>
+<body>
+    <p>フォント紹介</p>
+    <p>Hell Word!</p>
+    <!-- font-family: "遊ゴシック",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ","Merio",sans-serif,san-serif; -->
+
+    <div id="square-red" class="square"></div>
+    <div id="square-blue" class="square"></div>
+    <div id="square-green" class="square"></div>
+
+
+    <div class="first-section">
+<!--    <h1 style="color:green">新プロダクトのご紹介</h1>-->
+        <h1 class = "blue">新プロダクトのご紹介</h1>
+<!--    <p style="color:blue;font-size:100%">今回は、新しくリリースするプロダクトの紹介をします。</p>-->
+        <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
+    </div>
+    
+    <div class="second-section">
+        <p class="large">バーチャルリアリティが体験できるVRゴーグルを発売します。</p>
+        <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</p>
+    </div>
+
+    <a href="https://html-color-codes.info/japanese/">カラー参考URL</a>
+</body>
+</html>
