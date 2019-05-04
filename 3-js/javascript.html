@@ -4,23 +4,29 @@
     <title>JavaScript</title>
       
   </head>
-<body>
-  <p id="text">Hello World</p>
+  <body>
+    <p id="text">Hello World</p>
+    <button id="myButton">Change Text!</button>
 
-  <script type="text/javascript">
+    <script type="text/javascript">
+      document.getElementById("myButton").onclick = function(){
+        // alert("ポップアップ：ボタンがクリックされました！");
+        document.getElementById("text").innerHTML = "表示書換え：クリックしましたね！"
+      }
+
     // パラグラフのコンテンツを更新する処理
     /* 
       getElementByIdは、ID名を指定してブロック要素を取り出します。
       innerHTMLは、その中のコンテンツ（テキスト）を取り出します。
      */
-    document.getElementById("text").innerHTML ="Hello Rob!"
-  </script>
+    // document.getElementById("text").innerHTML ="Hello Rob!"
+    </script>
   
   <!-- <button onclick="alert('Hi Rob!')">Click Me!
-  </button>
+    </button>
 
-  <script type="text/javascript">
+    <script type="text/javascript">
     alert("This is second message!");
-  </script> -->
-</body>
+    </script> -->
+  </body>
 </html>
