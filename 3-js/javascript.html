@@ -21,6 +21,18 @@
      */
     // document.getElementById("text").innerHTML ="Hello Rob!"
     </script>
+
+    <p id="secondParagraph">JavaScriptは、</p>
+    <button id="secondButton">追記する！</button>
+    <script type="text/javascript">
+      document.getElementById("secondButton").onclick = function(){
+        /* document.getElementById("secondParagraph").innerHTML =
+        document.getElementById("secondParagraph").innerHTML + "ブラウザでもサーバサイドでも動作するプログラム言語です";
+        */
+        // 文字列を追記する。appendする。
+        document.getElementById("secondParagraph").innerHTML += "ブラウザでもサーバサイドでも動作するプログラム言語です";
+      }
+    </script>
   
   <!-- <button onclick="alert('Hi Rob!')">Click Me!
     </button>
