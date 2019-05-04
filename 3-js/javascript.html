@@ -24,21 +24,31 @@
 
     <p id="secondParagraph">JavaScriptは、</p>
     <button id="secondButton">追記する！</button>
+
+    <p id ="thirParagraph">スタイルを変更して見ましょう！</p>
+    <button id="changeStyle">スタイルを変更する！</button>
+
     <script type="text/javascript">
       document.getElementById("secondButton").onclick = function(){
         /* document.getElementById("secondParagraph").innerHTML =
         document.getElementById("secondParagraph").innerHTML + "ブラウザでもサーバサイドでも動作するプログラム言語です";
         */
         // 文字列を追記する。appendする。
-        document.getElementById("secondParagraph").innerHTML += "ブラウザでもサーバサイドでも動作するプログラム言語です";
+          document.getElementById("secondParagraph").innerHTML += "ブラウザでもサーバサイドでも動作するプログラム言語です";
+      }
+
+      document.getElementById("changeStyle").onclick = function() {
+        // document.getElementById("thirParagraph").style.color = "red";
+        document.getElementById("thirParagraph").style.display = "none";
       }
     </script>
-  
+
   <!-- <button onclick="alert('Hi Rob!')">Click Me!
     </button>
 
     <script type="text/javascript">
     alert("This is second message!");
     </script> -->
+
   </body>
 </html>
