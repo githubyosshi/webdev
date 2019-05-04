@@ -3,39 +3,24 @@
   <head>
     <title>JavaScript</title>
     <style type="text/css">
-      .circle {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        float: left;
-        margin: 20px;
-      }
-      #red-circle {
-        background-color: red;
-      }
-      #blue-circle {
-        background-color: blue;
-      }
-      #yellow-circle {
-        background-color: yellow;
-      }
+
     </style>
       
   </head>
   <body>
-   <div id="red-circle" class="circle"></div>
-   <div id="blue-circle" class="circle"></div>
-   <div id="yellow-circle" class="circle"></div>
+   <p><input type="text" id="inputForm">ここに名前を入力してください</p>
+   <button id="submitButton">送信する</button>
+
    <script type="text/javascript">
-    document.getElementById("red-circle").onclick = function(){
-      document.getElementById("red-circle").style.display = "none";
-    }
-    document.getElementById("blue-circle").onclick = function(){
-      document.getElementById("blue-circle").style.display = "none";
-    }
-    document.getElementById("yellow-circle").onclick = function(){
-      document.getElementById("yellow-circle").style.display = "none";
-    }
+      /* var x = 5;
+      alert(x); */
+      document.getElementById("submitButton").onclick = function(){
+        var name = "";
+        name = document.getElementById("inputForm").value;
+        // alart(name);
+        document.getElementById("newMessage").innerHTML = name + "さん.以下が申し込み内容になります。"
+      }
+
    </script>
 
   </body>
