@@ -27,23 +27,17 @@
       
       <div id="circle"></div>
       
-      <div class="square"></div>
-      
-      <div class="square"></div>
-      
+      <p>ここに文章が入ります。</p>
+
+      <iframe src="http://entreschoolonline.com"></iframe>
+
       <script type="text/javascript">
-        $("div").click(function(){
-          alert("Divがクリックされました！");
+        // $("div").click(function(){
+        $("div").hover(function(){
+          // $("p").html("Divがクリックされました！");
+          // alert($("p").html());
+          $("iframe").attr("src","http://learningdesign.jp");
         })
-        /*
-        $("#circle").click(function(){
-          alert("円がクリックされました！");
-        })
-        $(".square").click(function(){
-          alert("四角がクリックされました！");
-        })
-        */
-       
       </script>
   </body>
 </html>
