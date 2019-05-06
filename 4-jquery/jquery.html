@@ -3,18 +3,8 @@
 <html>
   <head>
     <style>
-      #circle {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background-color: green;
-        margin: 10px;
-      }
-      .square {
-        width: 150px;
-        height: 150px;
-        background-color: red;
-        margin: 10px;
+      #fadeInText {
+        display: none;
       }
     </style>
   </head>
@@ -24,25 +14,31 @@
       -->
       <script src="jquery-3.4.1.min.js"></script>
 
+      <!-- <p id="fadeOutText">このテキストはフェイドアウトします</p> -->
+      <!-- <button id ="fadeOut">フェイドアウトする！</button> -->
 
-      
-      <div id="circle"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      
+      <p id="text">このテキストは反転します</p>
+      <button id ="toggle">トグルする</button>
+
+      <!-- <p></p> -->
+
+      <!-- <p id="fadeInText">最初は隠れています。</p> -->
+      <!-- <button id ="fadeIn">フェイドインする！</button> -->
 
       <script type="text/javascript">
-        // $("#circle").click(function(){
-        $("div").click(function(){
-          // alert("円がクリックされました！");
-          /*
-          $("#circle").css("width","300px");
-          $("#circle").css("height", "300px");
-          $("#circle").css("background-color","red"); */
+        // $("#fadeOut").click(function(){
+        //    $("#fadeOutText").fadeOut("slow");
+        // })
+        // $("#fadeIn").click(function(){
+        //    $("#fadeInText").fadeIn("slow");
+        // })
 
-          /* alert($("#circle").css("width"));
-          alert($("#circle").css("background-color")); */
-          $(this).css("display","none");
+        $("#toggle").click(function(){
+          if($("#text").css("display") == "none") {
+            $("#text").fadeIn("slow");
+          } else {
+            $("#text").fadeOut("slow");
+          }
         })
 
       </script>
