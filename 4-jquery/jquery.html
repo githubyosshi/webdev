@@ -2,19 +2,23 @@
 
 <html>
   <head>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
     <style>
+      #draggable {
+        width: 200px;
+        height: 100px;
+        background-color: aqua;
+      }
 
     </style>
   </head>
   <body>
-
+      <div id="draggable">ドラッグしてくださいね</div>
       <script src="jquery-3.4.1.min.js"></script>
+      <script src="jquery-ui/jquery-ui.js"></script>
 
       <script type="text/javascript">
-        var regex = /Great/i;
-        var string = "Regex is great!";
-        var result = string.match(regex);
-        alert(result);
+        $("#draggable").draggable();
 
       </script>
   </body>
