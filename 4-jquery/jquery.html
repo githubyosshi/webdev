@@ -3,8 +3,11 @@
 <html>
   <head>
     <style>
-      #fadeInText {
-        display: none;
+      #circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: green;
       }
     </style>
   </head>
@@ -14,33 +17,18 @@
       -->
       <script src="jquery-3.4.1.min.js"></script>
 
-      <!-- <p id="fadeOutText">このテキストはフェイドアウトします</p> -->
-      <!-- <button id ="fadeOut">フェイドアウトする！</button> -->
-
-      <p id="text">このテキストは反転します</p>
-      <button id ="toggle">トグルする</button>
-
-      <!-- <p></p> -->
-
-      <!-- <p id="fadeInText">最初は隠れています。</p> -->
-      <!-- <button id ="fadeIn">フェイドインする！</button> -->
+      <div id="circle"></div>
 
       <script type="text/javascript">
-        // $("#fadeOut").click(function(){
-        //    $("#fadeOutText").fadeOut("slow");
-        // })
-        // $("#fadeIn").click(function(){
-        //    $("#fadeInText").fadeIn("slow");
-        // })
-
-        $("#toggle").click(function(){
-          if($("#text").css("display") == "none") {
-            $("#text").fadeIn("slow");
-          } else {
-            $("#text").fadeOut("slow");
-          }
+        $("#circle").click(function(){
+          $("#circle").animate({
+            width:"400px",
+            height:"400px",
+            marginLeft:"100px"
+            },2000,function(){
+            $("#circle").css("background-color","red");
+          });
         })
-
       </script>
   </body>
 </html>
