@@ -4,32 +4,39 @@
   <head>
     <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
     <style>
-      #resize1 {
-        width: 300px;
+      #drag {
+        width: 100px;
         height: 100px;
         background-color: aqua;
+        margin: 20px;
       }
-      #also {
-        width: 200px;
-        height: 100px;
+      #drop {
+        width: 400px;
+        height: 200px;
         background-color: red;
       }
 
     </style>
   </head>
   <body>
-      <div id="resize1">リサイズしてくださいね</div>
+      <div id="drag">ドラッグしてくださいね</div>
 
-      <div id="also">一緒に動きます！</div>
+      <div id="drop">
+        <p>ここにドロップして下さい！</p>
+      </div>
 
       <script src="jquery-3.4.1.min.js"></script>
       <script src="jquery-ui/jquery-ui.js"></script>
 
       <script type="text/javascript">
-        $("#resize1").resizable({
-          alsoResize: "#also"
+        $("#drag").draggable();
+        $("#drop").droppable({
+          drop: function(event, ui){
+            $(this)
+            .addClass("ui-state-highlight")
+            .find("p").html("ドロップされましたよ！");
+          }
         });
-        $("#also").resizable();
 
       </script>
   </body>
